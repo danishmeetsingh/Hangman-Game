@@ -33,6 +33,7 @@ while not end_of_game:
     if guess not in chosen_word:
         lives -= 1
         print(f"{guess} is not in the word")
+        print(f"Lives = {lives}")
         if lives == 0:
             end_of_game = True
             print("YOU LOSE.")
